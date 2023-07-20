@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import ACTIONS from '../Actions';
-import Client from '../components/Client';
-import Editor from '../components/Editor';
-import Toggle from './Toggle';
+import ACTIONS from '../Actions.js';
+import Client from '../components/Client.js';
+import Editor from '../components/Editor.js';
+import Toggle from './Toggle.js';
 
-import { initSocket } from '../socket';
+import { initSocket } from '../socket.js';
 import {
     useLocation,
     useNavigate,
@@ -15,7 +15,6 @@ import {
 
 import leaveimg from '../img/leave.png'
 import copyimg from '../img/copy.png'
-import darkimg from '../img/dark.png'
 
 const EditorPage = () => {
     const socketRef = useRef(null);
