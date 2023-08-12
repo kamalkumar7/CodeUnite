@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import IMG from '../img/codeUnite.png'
 
 const Home = () => {
     const navigate = useNavigate();
@@ -43,11 +44,11 @@ const Home = () => {
             <div className="formWrapper">
                 <img
                     className="homePageLogo"
-                    src="/CodeUnite.png"
+                    src={IMG}
                     alt="IDE"
                     style={{height:'150px'}}
                 />
-                {/* <h3>CodeUnite</h3> */}
+
                 <div className="inputGroup">
                     <input
                         type="text"

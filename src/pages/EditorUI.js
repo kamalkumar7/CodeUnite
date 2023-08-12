@@ -4,6 +4,7 @@ import ACTIONS from '../Actions.js';
 import Client from '../components/Client.js';
 import Editor from '../components/Editor.js';
 import Toggle from './Toggle.js';
+import IMG from '../img/codeUnite.png'
 
 import { initSocket } from '../socket.js';
 import {
@@ -122,7 +123,7 @@ const EditorPage = () => {
                     <div className="logo">
                         <img
                             className="logoImage"
-                            src="/codeUnite.png"
+                            src={IMG}
                             alt="logo"
                             style={{height:'125px'}}
                         />
@@ -139,12 +140,7 @@ const EditorPage = () => {
                     </div>
                 </div>
 
-                
-                {/* <button style={{textAlign:'center' , alignItems:'center', display:'flex', background:'none' ,marginBottom:'5px'
-                }} title= {`Switch to ${mode} `} className='btn' onClick={changeTheme}>
-                <img src= {darkimg} style={{height:'25px' ,  margin:'auto'}}/> 
-
-                </button> */}
+      
                 <Toggle changeTheme={changeTheme}/>
                   
                 <button className="btn copyBtn" onClick={copyRoomId} style={{alignItems:'center' ,zIndex:'4'}}>
